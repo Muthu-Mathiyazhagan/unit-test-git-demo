@@ -20,23 +20,23 @@ describe('Absolute : 90232 : Muthu Mathiyazhagan K', () => {
 })
 ////I90494
 describe("FizzBuzz : I90494 : Atharsh S", () => {
-    it("should return 'FizzBuzz' if input can be divide by 5 and 3", () =>{
+    it("should return 'FizzBuzz' if input can be divide by 5 and 3", () => {
         const result = lib.FizzBuzz(15);
         expect(result).toBe('FizzBuzz');
     })
-    it("should return 'Fizz' if input can be divide by 5", () =>{
+    it("should return 'Fizz' if input can be divide by 5", () => {
         const result = lib.FizzBuzz(5);
         expect(result).toBe('Fizz');
     })
-    it("should return 'Buzz' if input can be divide by 3", () =>{
+    it("should return 'Buzz' if input can be divide by 3", () => {
         const result = lib.FizzBuzz(3);
         expect(result).toBe('Buzz');
     })
-    it("should return 'BuzzBuzz' if input can be divide by 11", () =>{
+    it("should return 'BuzzBuzz' if input can be divide by 11", () => {
         const result = lib.FizzBuzz(11);
         expect(result).toBe('BuzzBuzz');
     })
-    
+
 })
 
 // 90487
@@ -78,17 +78,17 @@ describe('Vowel : 90486 : Priyadharshini M', () => {
 })
 
 describe('validateEmail : 90502 : Vijay M', () => {
-    it('It Should return Valid Email if the Input is Contains anystring@anystring.anystring pattern',() => {
+    it('It Should return Valid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
         const result = lib.validateEmail("vijay98430@gmail.com");
         expect(result).toBe('valid email');
     })
 
-    it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern',() => {
+    it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
         const result = lib.validateEmail("vijay98430#gmail.com");
         expect(result).toBe('invalid email');
     })
 
-    it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern',() => {
+    it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
         const result = lib.validateEmail("vijay98430#gmail");
         expect(result).toBe('invalid email');
     })
@@ -108,6 +108,40 @@ describe('divisible_by_5 : 90490 :  Aarthi S', () => {
     })
 })
 
+    //90501
+
+    describe('checkIsEven : 90501 : Pavan ', () => {
+
+        it('If input is multiple of 2 it should reply true', () => {
+            const result = lib.checkIsEven(2)
+            expect(result).toBe(true);
+        })
+    })
+    describe('checkIsEven : 90501 : Pavan ', () => {
+
+        it('If input is not a multiple of 2 it should reply false', () => {
+            const result = lib.checkIsEven(1)
+            expect(result).toBe(false);
+        })
+    })
+    describe('checkIsEven : 90501 : Pavan ', () => {
+        it('If input is negative multiple of 2 result is true', () => {
+            const result = lib.checkIsEven(-2)
+            expect(result).toBe(true);
+        })
+    })
+    describe('checkIsEven : 90501 : Pavan ', () => {
+        it('If input is <0 and not a multiple of 2 result is false', () => {
+            const result = lib.checkIsEven(-1)
+            expect(result).toBe(false);
+        })
+    })
+    describe('checkIsEven : 90501 : Pavan ', () => {
+        it('If input is not a multiple of 2 it should reply false', () => {
+            const result = lib.checkIsEven(-1)
+            expect(result).toBe(false);
+        })
+    })
 //90489
 describe('noofdays : 90489 :  Reshma S', () => {
     it('It Should return "No of days in a month" if the Input is between 28 and 31', () => {

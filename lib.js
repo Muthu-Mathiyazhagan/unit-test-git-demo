@@ -2,7 +2,6 @@
 module.exports.absolute = function (number) {
     return (number >= 0) ? number : -number;
 }
-
 //I90494
 module.exports.FizzBuzz = function (number) {
     if(number%5==0 && number%3==0){
@@ -65,6 +64,12 @@ module.exports.divisible_by_5 = function (n) {
         return "No";
     }
     }
+
+//90501
+module.exports.checkIsEven = function (num){
+    // Checks if given number is even or not 
+    if(num%2==0) return true;
+    else return false;
 
 //90489
 module.exports.noofdays=function(days){
