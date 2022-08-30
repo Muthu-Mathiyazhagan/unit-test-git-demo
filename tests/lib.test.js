@@ -155,3 +155,16 @@ describe('noofdays : 90489 :  Reshma S', () => {
         expect(result).toBe("Enter number between 28 and 31");
     })
 })
+
+//90491
+describe('whole : 90491 : Kannathal AR ', () => {
+    it('It Should return " Whole number" if the Input is greater than or equal to 0', () => {
+    const result = lib.whole(20);
+    expect(result).toBe("Whole number");
+    })
+    
+    it('It Should return "Not a whole number" if the Input less than 0', () => {
+    const result = lib.whole(-13);
+    expect(result).toBe("Not a whole number");
+    })
+    })

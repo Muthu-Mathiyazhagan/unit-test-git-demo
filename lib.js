@@ -70,6 +70,7 @@ module.exports.checkIsEven = function (num){
     // Checks if given number is even or not 
     if(num%2==0) return true;
     else return false;
+}
 
 //90489
 module.exports.noofdays=function(days){
@@ -77,5 +78,14 @@ module.exports.noofdays=function(days){
         return "No of days in a month";
     }else{
         return "Enter number between 28 and 31";
+    }
+}
+
+//90491
+module.exports.whole=function(i){
+    if(i>=0){
+        return "Whole number";
+    }else{
+        return "Not a whole number";
     }
 }
