@@ -214,3 +214,19 @@ describe('Eligibility vote : 90499 : Neela Kanta Reddy',()=>{
         expect(result).toBe(false);
     })
 })
+
+//90500
+describe('armstrong:90500:Anil_C',()=>{
+    it('it should return true if input number is armstrong',()=>{
+        const result=lib.Armstrong(153);
+        expect(result).toBe(true);
+    })
+    it('it should return false if the number is not an armstrong number',()=>{
+        const result=lib.Armstrong(152);
+        expect(result).toBe(false);
+    })
+    it('it should gives messae if the number is less than zero',()=>{
+        const result=lib.Armstrong(-12);
+        expect(result).toBe('please enter positive number');
+    })
+})
