@@ -123,6 +123,7 @@ module.exports.Factorial=function(n)
     return fact;
 }
 
+
 //90500
 
 const n = prompt('Enter a three-digit positive integer: ');
@@ -151,3 +152,4 @@ module.exports.Armstrong=function(n)
         return false;
     }
 }
+
