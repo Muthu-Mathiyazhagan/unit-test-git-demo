@@ -187,3 +187,14 @@ describe('primeornot : 90498 : Sailochana R', () => {
         expect(result).toBe(true);
     })
 })
+//90497
+describe('Fact : 90497 : Mohammed Sithik S',()=>{
+    it('It should return Factorial of 5 => 120',()=>{
+        const result=lib.Factorial(5);
+        expect(result).toBe(120);
+    })
+    it('It should return Factorial of 6 => 720',()=>{
+        const result=lib.Factorial(6);
+        expect(result).toBe(720);
+    })
+})
