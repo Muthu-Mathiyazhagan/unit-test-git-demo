@@ -122,3 +122,10 @@ module.exports.Factorial=function(n)
     }
     return fact;
 }
+
+//I90499
+module.exports.VoteEligibility= (age)=>{
+    if(age>18) return true
+    else if(age<=0) return msg="age must be a positive value";
+    else return false
+};

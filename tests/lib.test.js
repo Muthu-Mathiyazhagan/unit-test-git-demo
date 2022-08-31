@@ -198,3 +198,19 @@ describe('Fact : 90497 : Mohammed Sithik S',()=>{
         expect(result).toBe(720);
     })
 })
+
+//I90499
+describe('Eligibility vote : 90499 : Neela Kanta Reddy',()=>{
+    it('I age less than 0 please enter a valid age',()=>{
+        const result=lib.VoteEligibility(-1);
+        expect(result).toBe(msg);
+    })
+    it('If Age greater than 18 eligible to vote',()=>{
+        const result=lib.VoteEligibility(19);
+        expect(result).toBe(true);
+    })
+    it('I age less than 18 not eligible to vote',()=>{
+        const result=lib.VoteEligibility(17);
+        expect(result).toBe(false);
+    })
+})
