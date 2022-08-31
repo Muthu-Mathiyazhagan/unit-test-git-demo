@@ -122,3 +122,32 @@ module.exports.Factorial=function(n)
     }
     return fact;
 }
+
+//90500
+
+const n = prompt('Enter a three-digit positive integer: ');
+module.exports.Armstrong=function(n)
+{
+    let sum = 0;
+    let temp = n;
+    if (n<0)
+    {
+        return 'please enter positive number';
+    }
+    while (temp > 0) {
+        // finding the one's digit
+        let remainder = temp % 10;
+
+        sum += remainder * remainder * remainder;
+
+        // removing last digit from the number
+        temp = parseInt(temp / 10); // convert float into integer
+    }
+    // check the condition
+    if (sum == n) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
