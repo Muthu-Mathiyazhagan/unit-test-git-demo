@@ -168,3 +168,22 @@ describe('whole : 90491 : Kannathal AR ', () => {
     expect(result).toBe("Not a whole number");
     })
     })
+//90498
+describe('primeornot : 90498 : Sailochana R', () => {
+    it('It should return False if the Input is equal to 1' , () => {
+        const result=lib.primeornot(1);
+        expect(result).toBe(false);
+    })
+    it('It should return True if the Input is equal to 2' , () => {
+        const result=lib.primeornot(2);
+        expect(result).toBe(true);
+    })
+    it('It should return False if the Input is divisible by x' , () => {
+        const result=lib.primeornot(15);
+        expect(result).toBe(false);
+    })
+    it('It should return True if the Input is not divisible by x' , () => {
+        const result=lib.primeornot(13);
+        expect(result).toBe(true);
+    })
+})
