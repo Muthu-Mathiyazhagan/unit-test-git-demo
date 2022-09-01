@@ -245,3 +245,24 @@ describe('LeapYear:90495:Vijesh_S',()=>{
         expect(result).toBe("leap");
     })
 })
+
+
+//90496
+
+describe('countVowel : 90496 : Anbu V', () => {
+    it('It Should return the count of vowels', () => {
+        const result = lib.countVowel("anbu");
+        expect(result).toBe(2);
+    })
+
+
+    it('It Should return the count of vowels', () => {
+        const result = lib.countVowel("vijesh");
+        expect(result).toBe(2);
+    })
+
+    it('It Should return the count of vowels', () => {
+        const result = lib.countVowel("stanly");
+        expect(result).toBe(1);
+    })
+})

@@ -169,3 +169,15 @@ module.exports.LeapYear=function(year){
     
 }
 
+//90496
+const vowels = ["a", "e", "i", "o", "u"]
+
+module.exports.countVowel = function(str) {
+    let count = 0;
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+    return count
+}
