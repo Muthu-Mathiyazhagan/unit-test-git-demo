@@ -266,3 +266,15 @@ describe('countVowel : 90496 : Anbu V', () => {
         expect(result).toBe(1);
     })
 })
+
+//90511
+describe('addition : 90511 : Dhanaranjanii', () => {
+    it('It should return the sum of digits',() => {
+        const result = lib.addition(73);
+        expect(result).toBe(10);
+    })
+    it('It should return the sum of digits',() => {
+        const result = lib.addition(13);
+        expect(result).toBe(4);
+    })
+})

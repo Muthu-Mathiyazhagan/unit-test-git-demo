@@ -181,3 +181,16 @@ module.exports.countVowel = function(str) {
     }
     return count
 }
+
+//i90511
+module.exports.addition = function(n)
+{
+    let r=0;
+    let sum=0;
+    while(n>0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n/=10;
+    }
+}
