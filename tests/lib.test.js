@@ -230,3 +230,18 @@ describe('armstrong:90500:Anil_C',()=>{
         expect(result).toBe('please enter positive number');
     })
 })
+//90495
+describe('LeapYear:90495:Vijesh_S',()=>{
+    it('it should return "leap" if the year is leap year',()=>{
+        const result=lib.LeapYear(2000);
+        expect(result).toBe("leap");
+    })
+    it('it should return "not leap" if the year is not a leap year',()=>{
+        const result=lib.LeapYear(2019);
+        expect(result).toBe("not leap");
+    })
+    it('it should return "leap" if the year is leap year',()=>{
+        const result=lib.LeapYear(2012);
+        expect(result).toBe("leap");
+    })
+})

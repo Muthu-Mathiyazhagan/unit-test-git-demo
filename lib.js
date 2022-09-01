@@ -126,7 +126,6 @@ module.exports.Factorial=function(n)
 
 //90500
 
-const n = prompt('Enter a three-digit positive integer: ');
 module.exports.Armstrong=function(n)
 {
     let sum = 0;
@@ -151,5 +150,22 @@ module.exports.Armstrong=function(n)
     else {
         return false;
     }
+}
+
+//90495
+module.exports.LeapYear=function(year){
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+          if (year % 400 == 0)
+            return "leap";
+          else
+            return "not leap";
+        }
+        else
+          return "leap";
+    }
+    else
+        return "not leap";
+    
 }
 
