@@ -183,14 +183,13 @@ module.exports.countVowel = function(str) {
 }
 
 //i90511
-module.exports.addition = function(n)
+module.exports.addition = function(n,m)
 {
-    let r=0;
-    let sum=0;
-    while(n>0)
-    {
-        r=n%10;
-        sum=sum+r;
-        n/=10;
-    }
+    let sum = n+m;
+    return sum;
+}
+
+//I90512
+module.exports.VoteEligibility= function(n){
+    return (n>=18)?"Eligible":"Not Eligible";
 }

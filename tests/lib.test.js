@@ -270,11 +270,22 @@ describe('countVowel : 90496 : Anbu V', () => {
 //90511
 describe('addition : 90511 : Dhanaranjanii', () => {
     it('It should return the sum of digits',() => {
-        const result = lib.addition(73);
+        const result = lib.addition(7,3);
         expect(result).toBe(10);
     })
     it('It should return the sum of digits',() => {
-        const result = lib.addition(13);
+        const result = lib.addition(1,3);
         expect(result).toBe(4);
     })
+})
+//I90512
+describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
+    it('It should return eligible',()=>{
+        const temp = lib.VoteEligibility(19);
+        expect(temp).toBe('Eligible')
+    } )
+    it('It should return not eligible',()=>{
+        const temp = lib.VoteEligibility(13);
+        expect(temp).toBe('Not Eligible')
+    } )
 })
