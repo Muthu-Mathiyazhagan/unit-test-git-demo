@@ -303,3 +303,15 @@ describe('odd : 90488 :  Sneha M', () => {
         expect(result).toBe("No");
     })
 })
+
+//i90505
+describe('Largest number : i90505 : Sanjay S',()=>{
+    it('It should return Largest number among three numbers',()=>{
+        const result = lib.largestNum(10,30,20);
+        expect(result).toBe('30');
+    } )
+    it('It should return Largest number among three numbers',()=>{
+        const result = lib.largestNum(91,50,27);
+        expect(result).toBe('91');
+    } )
+})
