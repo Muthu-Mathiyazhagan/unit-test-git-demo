@@ -198,3 +198,9 @@ module.exports.VoteEligibility= function(n){
 module.exports.odd=function(n){
     return (n%2==0)?"No":"Yes";
 }
+
+//i90505
+module.exports.largestNum=function(num1,num2,num3){
+    let largest = Math.max(num1, num2, num3);
+    return largest;
+}
