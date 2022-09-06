@@ -289,3 +289,17 @@ describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
         expect(temp).toBe('Not Eligible')
     } )
 })
+
+// 90488
+describe('odd : 90488 :  Sneha M', () => {
+    it('It Should return Yes if the Input is Odd', () => {
+        const result = lib.odd(21);
+        expect(result).toBe("Yes");
+    })
+
+
+    it('It Should return No if the Input is even', () => {
+        const result = lib.odd(12);
+        expect(result).toBe("No");
+    })
+})

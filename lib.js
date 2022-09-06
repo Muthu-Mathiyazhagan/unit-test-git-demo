@@ -193,3 +193,8 @@ module.exports.addition = function(n,m)
 module.exports.VoteEligibility= function(n){
     return (n>=18)?"Eligible":"Not Eligible";
 }
+
+//I90488
+module.exports.odd=function(n){
+    return (n%2==0)?"No":"Yes";
+}
