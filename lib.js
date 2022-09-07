@@ -198,3 +198,17 @@ module.exports.VoteEligibility= function(n){
 module.exports.odd=function(n){
     return (n%2==0)?"No":"Yes";
 }
+
+//I90509
+module.exports.divi_10 = function(n) 
+{
+    if(n % 10 == 0) {
+        return "Yes";
+    }
+    else {
+        return "No";
+    }
+
+    let sum = n+m;
+    return sum;
+}
