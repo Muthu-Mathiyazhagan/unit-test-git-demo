@@ -199,21 +199,21 @@ describe('Fact : 90497 : Mohammed Sithik S',()=>{
     })
 })
 
-//I90499
-describe('Eligibility vote : 90499 : Neela Kanta Reddy',()=>{
-    it('I age less than 0 please enter a valid age',()=>{
-        const result=lib.VoteEligibility(-1);
-        expect(result).toBe(msg);
-    })
-    it('If Age greater than 18 eligible to vote',()=>{
-        const result=lib.VoteEligibility(19);
-        expect(result).toBe(true);
-    })
-    it('I age less than 18 not eligible to vote',()=>{
-        const result=lib.VoteEligibility(17);
-        expect(result).toBe(false);
-    })
-})
+// //I90499
+// describe('Eligibility vote : 90499 : Neela Kanta Reddy',()=>{
+//     it('I age less than 0 please enter a valid age',()=>{
+//         const result=lib.VoteEligibility(-1);
+//         expect(result).toBe(msg);
+//     })
+//     it('If Age greater than 18 eligible to vote',()=>{
+//         const result=lib.VoteEligibility(19);
+//         expect(result).toBe(true);
+//     })
+//     it('I age less than 18 not eligible to vote',()=>{
+//         const result=lib.VoteEligibility(17);
+//         expect(result).toBe(false);
+//     })
+// })
 
 //90500
 describe('armstrong:90500:Anil_C',()=>{
@@ -281,11 +281,11 @@ describe('addition : 90511 : Dhanaranjanii', () => {
 //I90512
 describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
     it('It should return eligible',()=>{
-        const temp = lib.VoteEligibility(19);
+        const temp = lib.VoteEligibility1(19);
         expect(temp).toBe('Eligible')
     } )
     it('It should return not eligible',()=>{
-        const temp = lib.VoteEligibility(13);
+        const temp = lib.VoteEligibility1(13);
         expect(temp).toBe('Not Eligible')
     } )
 })
@@ -300,6 +300,19 @@ describe('odd : 90488 :  Sneha M', () => {
 
     it('It Should return No if the Input is even', () => {
         const result = lib.odd(12);
+        expect(result).toBe("No");
+    })
+})
+//I90509
+describe('divi_10 : 90509 :  lokeshwaran c', () => {
+    it('It Should return Yes the Input is divisible by 10', () => {
+        const result = lib.divi_10(20);
+        expect(result).toBe("Yes");
+    })
+
+
+    it('It Should return No the Input is not divisible by 10', () => {
+        const result = lib.divi_10(13);
         expect(result).toBe("No");
     })
 })
