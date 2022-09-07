@@ -316,3 +316,16 @@ describe('divi_10 : 90509 :  lokeshwaran c', () => {
         expect(result).toBe("No");
     })
 })
+//I90507
+describe('divi_24 : 90507 :  Sakthi Ganesh C', () => {
+    it('It Should return Yes the Input is divisible by 24', () => {
+        const result = lib.divi_24(24);
+        expect(result).toBe("true");
+    })
+
+
+    it('It Should return No the Input is not divisible by 24', () => {
+        const result = lib.divi_24(27);
+        expect(result).toBe("false");
+    })
+})

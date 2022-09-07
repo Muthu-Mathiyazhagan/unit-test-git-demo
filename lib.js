@@ -208,7 +208,10 @@ module.exports.divi_10 = function(n)
     else {
         return "No";
     }
+}
 
-    let sum = n+m;
-    return sum;
+//I90507
+module.exports.divi_24 = function(n) 
+{
+    return (n % 24 == 0)? 'true':'false';
 }
